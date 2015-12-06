@@ -1,0 +1,30 @@
+\ProvidesPackage{frthm}
+
+\usepackage{amsthm}
+%--------------------------------"Behauptungsumgebung" in Sprache -------------------------------
+\newtheoremstyle{definition2}{\topsep}{1em}{}{}{\bfseries}{}{ }{\thmnumber{(#2) }\thmname{#1}\thmnote{ (#3)}.}
+\newtheoremstyle{satz2}{\topsep}{1em}{\itshape}{}{\bfseries}{}{ }{\thmnumber{(#2) }\thmname{#1}\thmnote{ (#3)}.}
+\theoremstyle{definition2}
+\newtheorem{def2}{D\'efinition}[section]
+\newtheorem*{def2*}{D\'efinition}
+\newtheorem{bspe}[def2]{Exemples}
+\newtheorem*{bspe*}{Exemples}
+\newtheorem{beisp}[def2]{Exemple}
+\newtheorem*{beisp*}{Exemple}
+\newtheorem{bem}[def2]{Remarque}
+\newtheorem*{bem*}{Remarque}
+\newtheorem{bemen}[def2]{Remarques}
+\newtheorem*{bemen*}{Remarques}
+\newtheorem{wdh}[def2]{Rappel}
+\newtheorem*{wdh*}{Rappel}
+\newtheorem{wdhen}[def2]{Rappels}
+\newtheorem*{wdhen*}{Rappels}
+\theoremstyle{satz2}
+\newtheorem{kor}[def2]{Corollaire}
+\newtheorem*{kor*}{Corollaire}
+\newtheorem{satz}[def2]{Th\'eor\`eme}
+\newtheorem*{satz*}{Th\'eor\`eme}
+\newtheorem{lem}[def2]{Lemme}
+\newtheorem*{lem*}{Lemme}
+\newtheorem{prop}[def2]{Proposition}
+\newtheorem*{prop*}{Proposition}

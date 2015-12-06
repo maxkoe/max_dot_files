@@ -1,0 +1,18 @@
+\ProvidesPackage{proba}
+
+%\usepackage{mathbasis}
+
+\DeclareMathOperator{\Ber}{Ber}
+\DeclareMathOperator{\Bin}{Bin}
+\DeclareMathOperator{\Exp}{Exp}
+\DeclareMathOperator{\Poi}{Poi}
+\DeclareMathOperator{\Geom}{Geom}
+
+\newcommand{\Cov}{\mathbb C \! \operatorname{ov}}
+
+
+%---------------------------------Unabhänigkeits-/Independencesymbol-------
+\DeclareMathOperator*{\indep}{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+
+\DeclareMathOperator{\indic}{\mathbbm 1 \!}

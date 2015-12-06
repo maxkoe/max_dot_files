@@ -1,0 +1,1 @@
+~/Library/texmf/tex/latex/

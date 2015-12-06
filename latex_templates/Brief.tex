@@ -1,0 +1,53 @@
+\documentclass[DIN, pagenumber=false, parskip=half,% 
+               fromalign=left, fromphone=true,%  
+               fromemail=true, fromrule=false]{scrlttr2}
+\usepackage{deutsch}
+%\usepackage{franz}
+%\usepackage{englisch}
+
+
+\usepackage[official]{eurosym}
+\usepackage{structs}
+\RequirePackage{graphicx}
+
+%%Korrekte Ausrichtung des Absenders nach DIN 5008
+\usepackage{calc}
+\makeatletter
+\@setplength{refwidth}{\textwidth}
+\@setplength{refhpos}{\useplength{toaddrhpos}}
+\setlength{\oddsidemargin}{\useplength{toaddrhpos}-1in}
+\makeatother
+
+%%Ausrichtung der Signatur am Schriftkörper
+\renewcommand*{\raggedsignature}{\raggedright}
+
+%%Anlage(n) -> Anlagen
+\renewcaptionname{ngerman}{\enclname}{Anlagen}
+
+\setkomavar{fromname}{Maximilian König}
+%\setkomavar{fromaddress}{Fliederweg 10 \\ 06317 Seegebiet Mansfelder Land}
+\setkomavar{fromaddress}{Charlottenstr. 28\\13597 Berlin}
+%\setkomavar{fromphone}{+49 157 81687005}
+\setkomavar{fromphone}{+49 151 10975366}
+\setkomavar{fromemail}{maximilian.koe@gmail.de}
+\setkomavar{signature}{Maximilian König}
+\setkomavar{subject}[]{%%%Betref
+}
+
+\begin{document}
+
+\begin{letter}{%%%Adressat
+  }
+
+\opening{%%%Anrede,
+}
+
+\closing{%%%Schlussformel
+}
+%Eventuelle Anhänge; Achtung oben die Änderung Anlage(n) -> Anlagen / Anlange anpassen
+%\encl{ %%% // %%% 
+%}
+
+\end{letter}
+
+\end{document}

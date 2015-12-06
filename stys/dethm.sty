@@ -1,0 +1,34 @@
+\ProvidesPackage{dethm}
+
+\usepackage{amsthm}
+%--------------------------------"Behauptungsumgebung" in Sprache -------------------------------
+\newtheoremstyle{definition2}{\topsep}{1em}{}{}{\bfseries}{}{ }{\thmnumber{(#2) }\thmname{#1}\thmnote{ (#3)}.}
+\newtheoremstyle{satz2}{\topsep}{1em}{\itshape}{}{\bfseries}{}{ }{\thmnumber{(#2) }\thmname{#1}\thmnote{ (#3)}.}
+\theoremstyle{definition2}
+\newtheorem{def2}{Definition}[section]
+\newtheorem*{def2*}{Definition}
+\newtheorem{beisp}[def2]{Beispiel}
+\newtheorem*{beisp*}{Beispiel}
+\newtheorem{bspe}[def2]{Beispiele}
+\newtheorem*{bspe*}{Beispiele}
+\newtheorem{bem}[def2]{Bemerkung}
+\newtheorem*{bem*}{Bemerkung}
+\newtheorem{bemen}[def2]{Bemerkungen}
+\newtheorem*{bemen*}{Bemerkungen}
+\theoremstyle{satz2}
+\newtheorem{kor}[def2]{Korollar}
+\newtheorem*{kor*}{Korollar}
+\newtheorem{satz}[def2]{Satz}
+\newtheorem*{satz*}{Satz}
+\newtheorem{lem}[def2]{Lemma}
+\newtheorem*{lem*}{Lemma}
+\newtheorem{hilf}[def2]{Hilfssatz}
+\newtheorem*{hilf*}{Hilfssatz}
+\newtheorem{prop}[def2]{Proposition}
+\newtheorem*{prop*}{Proposition}
+
+\newtheorem{hinw}[def2]{Hinweis}
+\newtheorem*{hinw*}{Hinweis}
+\newtheorem{wdh}[def2]{Wiederholung}
+\newtheorem*{wdh*}{Wiederholung}
+

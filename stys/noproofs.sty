@@ -1,0 +1,7 @@
+\ProvidesPackage{noproofs}
+
+
+\usepackage{environ}
+\NewEnviron{killcontents}{}
+\let\proof\killcontents
+\let\endproof\endkillcontents

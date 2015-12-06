@@ -1,0 +1,36 @@
+\ProvidesPackage{mathbasis}
+
+\usepackage[intlimits]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}  %          - Provides \mathscr
+\usepackage{bm}        %Bold Math - for bold greek symbols
+\usepackage{bbm}       %          - for ''\mathbb 1'' (but rather \mathbbm 1)
+\usepackage{stmaryrd}  %for [[ (\llbracket) and ]] (\rrbracket) as special symbols
+\usepackage{mathtools} %for \mathclap etc. [Reducing spacing of expressions, esp. subsets etc.]
+
+
+
+%Bigop - Große, Indizierbare Operatoren à la façon de \prod et \sum ----------------------------------------------------
+\newcommand{\BIGOP}[1]{\mathop{\mathchoice%
+{\raise-0.22em\hbox{\huge $#1$}}%
+{\raise-0.05em\hbox{\Large $#1$}}{\hbox{\large $#1$}}{#1}}}
+\newcommand{\bigtimes}{\BIGOP{\times}}
+\newcommand{\bigindep}{\BIGOP{\indep}}
+
+%Nice little things--------------------------------------------------------
+\newcommand{\dx}[1]{\operatorname{d}\!#1}
+
+\renewcommand{\hat}{\widehat}
+\renewcommand{\tilde}{\widetilde}
+
+
+
+
+%Verhindere Umbruch von inline-Mathe-Umgebungen-------------------------
+%\relpenalty=10000
+%\binoppenalty=10000
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
