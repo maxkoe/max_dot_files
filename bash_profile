@@ -26,6 +26,8 @@ alias testAway="python -m unittest discover"
 
 alias vimIPprep="stty stop undef # to unmap ctrl-s"
 
+alias ipython="ipython3"
+
 
 set show-mode-in-prompt on
 

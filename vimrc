@@ -15,6 +15,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jpythonfold.vim'
 "Plugin 'keflavich/macvim-skim'
 Plugin 'ivanov/vim-ipython'
+Plugin 'suan/vim-instant-markdown'
 
 
 " All of your Plugins must be added before the following line
@@ -47,6 +48,10 @@ set number                        " enable line numbers
 
 set laststatus=2                  " to properly enable airline
 
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+let g:markdown_fenced_languages = ['python', 'latex']
+
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*'
@@ -58,3 +63,13 @@ let g:Imap_UsePlaceHolders = 0
 map ,ll <leader>ll
 map ,ls :w<CR>:silent !/Applications/Skim.app/Contents/SharedSupport/displayline -r <C-r>=line('.')<CR> %<.pdf %<CR><CR>
 map ,lv <leader>lv
+
+" Disable Arrow Keys
+inoremap <Down> <NOP>
+inoremap <Up> <NOP>
+inoremap <Left> <NOP>
+inoremap <Right> <NOP>
+noremap <Down> <NOP>
+noremap <Up> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
