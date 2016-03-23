@@ -15,12 +15,17 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jpythonfold.vim'
 "Plugin 'keflavich/macvim-skim'
 Plugin 'ivanov/vim-ipython'
-Plugin 'suan/vim-instant-markdown'
 
+"markdown plugins
+Plugin 'suan/vim-instant-markdown'
+Plugin 'gabrielelana/vim-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+"enable mouse scrolling
+set mouse=a
 
 
 syntax enable
@@ -36,7 +41,10 @@ set encoding=UTF-8                " set character encoding
 set backspace=indent,eol,start    " enable normal backspacing
 
 set tabstop=2                     " define tab-width
+set shiftwidth=2
+set softtabstop=2
 set expandtab                     " replace tab by spaces
+set smarttab
 
 set hlsearch                      " highlight matches
 set ignorecase                    " ignore case
@@ -60,9 +68,13 @@ let g:Tex_ViewRule_pdf = 'open -a Skim'
 
 let g:Imap_UsePlaceHolders = 0
 
+let mapleader=","
 map ,ll <leader>ll
 map ,ls :w<CR>:silent !/Applications/Skim.app/Contents/SharedSupport/displayline -r <C-r>=line('.')<CR> %<.pdf %<CR><CR>
 map ,lv <leader>lv
+
+let g:markdown_enable_spell_checking = 0
+let g:markdown_enable_enable_mappings = 1
 
 " Disable Arrow Keys
 inoremap <Down> <NOP>
