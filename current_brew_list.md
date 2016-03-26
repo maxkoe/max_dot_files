@@ -1,4 +1,4 @@
-current list of brew-installed packages (as of **10/03/2016**)
+current list of brew-installed packages (as of **26/03/2016**)
 
 -arpack
 -autoconf
@@ -41,6 +41,7 @@ current list of brew-installed packages (as of **10/03/2016**)
 -mpfr
 -neovim
 -node
+-ntfs-3g
 -octave
 -openssl
 -pandoc
