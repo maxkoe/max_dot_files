@@ -74,7 +74,6 @@ map ,ls :w<CR>:silent !/Applications/Skim.app/Contents/SharedSupport/displayline
 map ,lv <leader>lv
 
 let g:markdown_enable_spell_checking = 0
-let g:markdown_enable_enable_mappings = 1
 
 " Disable Arrow Keys
 inoremap <Down> <NOP>
