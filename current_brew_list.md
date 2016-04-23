@@ -1,9 +1,10 @@
-current list of brew-installed packages (as of **26/03/2016**)
+current list of brew-installed packages (as of **23/04/2016**)
 
 -arpack
 -autoconf
 -automake
 -cmake
+-coreutils
 -cscope
 -epstool
 -faac
@@ -38,6 +39,7 @@ current list of brew-installed packages (as of **26/03/2016**)
 -little-cms2
 -lua
 -macvim
+-metis
 -mpfr
 -neovim
 -node

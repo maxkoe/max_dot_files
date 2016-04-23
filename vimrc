@@ -9,12 +9,12 @@ Plugin 'VundleVim/Vundle.vim'
 "See config at: https://github.com/gmarik/Vundle.vim
 
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'                            " nicer statusline
-Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'jpythonfold.vim'
-"Plugin 'keflavich/macvim-skim'
-Plugin 'ivanov/vim-ipython'
+" Plugin 'bling/vim-airline'                            " nicer statusline
+" Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
+" Plugin 'christoomey/vim-tmux-navigator'
+" Plugin 'jpythonfold.vim'
+" Plugin 'keflavich/macvim-skim'
+" Plugin 'ivanov/vim-ipython'
 
 "markdown plugins
 Plugin 'suan/vim-instant-markdown'
@@ -60,18 +60,19 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 let g:markdown_fenced_languages = ['python', 'latex']
 
-let g:tex_flavor='latex'
-let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*'
- 
-let g:Tex_ViewRule_pdf = 'open -a Skim'
+" let g:tex_flavor='latex'
+" let g:Tex_DefaultTargetFormat = 'pdf'
+" let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*'
+"  
+" let g:Tex_ViewRule_pdf = 'open -a Skim'
+" 
+" let g:Imap_UsePlaceHolders = 0
 
-let g:Imap_UsePlaceHolders = 0
-
-let mapleader=","
-map ,ll <leader>ll
-map ,ls :w<CR>:silent !/Applications/Skim.app/Contents/SharedSupport/displayline -r <C-r>=line('.')<CR> %<.pdf %<CR><CR>
-map ,lv <leader>lv
+" let mapleader=","
+" map ,ll <leader>ll
+" map ,ls :w<CR>:silent !/Applications/Skim.app/Contents/SharedSupport/displayline -r <C-r>=line('.')<CR> %<.pdf %<CR><CR>
+" map ,lv <leader>lv
+"
 
 let g:markdown_enable_spell_checking = 0
 
@@ -84,3 +85,13 @@ noremap <Down> <NOP>
 noremap <Up> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+
+" Temporary stuff
+inoremap ul<Tab> \underline 
+inoremap Y<Tab> \underline{\mathrm Y}
+inoremap I<Tab> \underline{\mathrm I}
+inoremap T<Tab> \underline{\mathrm T}
+inoremap xi<Tab> \bm\xi
+inoremap eta<Tab> \bm\eta
+

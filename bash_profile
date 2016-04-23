@@ -1,8 +1,9 @@
 export PATH=/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:/usr/local/share/python:/usr/local/bin:$PATH
 
 ##Colorful ls
-alias ls="ls -hG"
-alias ll='ls -lh'
+alias ls="gls -hG"
+alias ll='gls -lh'
+alias lx='gls -lhXa | grep -E .*\.\(tex\|md\)$'
 export PS1='\[\033[01;32m\]\u@MaxMBP: \[\033[01;31m\]\W \$ \[\033[00m\]'
 
 set -o vi
