@@ -1,5 +1,6 @@
 set nocindent
 set timeoutlen=2000
+set colorcolumn=120
 
 nnoremap ,ll :!pdflatex -interaction nonstopmode %<CR>
 nnoremap ,lr :!a=%; bibtex ${a\%.tex}<CR><CR>
@@ -16,7 +17,8 @@ inoremap item<Tab> \begin{itemize}<CR>\item <CR><Up><Up><Esc>^<Down><Down>i\end{
 
 " Umgebungen
 inoremap align<Tab> \begin{align*}<CR>\end{align*}<Esc>O
-inoremap eqn<Tab> \begin{equation*}<CR>\end{equation*}<Esc>O
+inoremap mult<Tab> \begin{multline*}<CR>\end{multline*}<Esc>O
+inoremap eqn<Tab> \begin{equation}<CR>\end{equation}<Esc>O
 inoremap eqnl<Tab> \begin{equation}<CR>\label{eqn:}<CR>\end{equation}<Esc><Up>O
 inoremap text<Tab> \text{
 inoremap tex<Tab> \text{
@@ -194,7 +196,7 @@ inoremap Hilbert \textsc{Hilbert}
 inoremap Banach \textsc{Banach}
 inoremap Cauchy \textsc{Cauchy}
 inoremap Schwartz \textsc{Schwartz}
-inoremap Gelfand \textsc{Schwartz}
+inoremap Gelfand \textsc{Gelfand}
 inoremap Garding \textsc{G\aa{}rding}
 inoremap Frechet \textsc{Fr\'echet}
 

@@ -11,7 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 " Plugin 'bling/vim-airline'                            " nicer statusline
 " Plugin 'git://git.code.sf.net/p/vim-latex/vim-latex'
-" Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 " Plugin 'jpythonfold.vim'
 " Plugin 'keflavich/macvim-skim'
 " Plugin 'ivanov/vim-ipython'
