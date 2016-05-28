@@ -1,8 +1,14 @@
-current list of brew-installed packages (as of **23/04/2016**)
+current list of brew-installed packages (as of **28/05/2016**)
 
 -arpack
+-atk
+-atkmm
 -autoconf
 -automake
+-bdw-gc
+-boost
+-cairo
+-cairomm
 -cmake
 -coreutils
 -cscope
@@ -14,17 +20,28 @@ current list of brew-installed packages (as of **23/04/2016**)
 -gcc
 -gd
 -gdbm
+-gdk-pixbuf
 -gettext
 -ghostscript
 -git
 -gl2ps
+-glib
+-glibmm
 -glpk
 -gmp
 -gnu-sed
 -gnuplot
+-gobject-introspection
 -graphicsmagick
+-gsl
+-gtk+
+-gtkmm
+-harfbuzz
 -hdf5
+-hicolor-icon-theme
+-icu4c
 -imagemagick
+-inkscape
 -isl
 -jbig2dec
 -jpeg
@@ -32,10 +49,13 @@ current list of brew-installed packages (as of **23/04/2016**)
 -libav
 -libdvdcss
 -libevent
+-libffi
 -libmpc
 -libpng
+-libsigc++
 -libtiff
 -libtool
+-little-cms
 -little-cms2
 -lua
 -macvim
@@ -44,12 +64,15 @@ current list of brew-installed packages (as of **23/04/2016**)
 -neovim
 -node
 -ntfs-3g
--octave
 -openssl
 -pandoc
+-pango
+-pangomm
 -pcre
+-pixman
 -pkg-config
 -plotutils
+-popt
 -pstoedit
 -pyqt
 -python
