@@ -1,4 +1,4 @@
-current list of brew-installed packages (as of **28/05/2016**)
+current list of brew-installed packages (as of **19/06/2016**)
 
 -arpack
 -atk
@@ -91,6 +91,7 @@ current list of brew-installed packages (as of **28/05/2016**)
 -texinfo
 -tmux
 -veclibfort
+-webp
 -x264
 -xvid
 -xz

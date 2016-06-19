@@ -94,4 +94,5 @@ inoremap I<Tab> \underline{\mathrm I}
 inoremap T<Tab> \underline{\mathrm T}
 inoremap xi<Tab> \bm\xi
 inoremap eta<Tab> \bm\eta
+inoremap zeta<Tab> \bm\zeta
 

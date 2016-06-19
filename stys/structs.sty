@@ -1,6 +1,8 @@
 \ProvidesPackage{structs}
 
-\usepackage{paralist} 
+\makeatletter
+\@ifundefined{only}{\usepackage{paralist}}
+\makeatother
 \usepackage{enumerate}
 %\usepackage{enumitem}
 
