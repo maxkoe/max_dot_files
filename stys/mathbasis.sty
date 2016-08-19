@@ -9,6 +9,8 @@
 \usepackage{stmaryrd}  %for [[ (\llbracket) and ]] (\rrbracket) as special symbols
 \usepackage{mathtools} %for \mathclap etc. [Reducing spacing of expressions, esp. subsets etc.]
 
+\usepackage{cancel}
+
 
 
 %Bigop - Große, Indizierbare Operatoren à la façon de \prod et \sum ----------------------------------------------------
@@ -19,7 +21,11 @@
 \newcommand{\bigindep}{\BIGOP{\indep}}
 
 %Nice little things--------------------------------------------------------
+%\newcommand{\dx}[1]{\mathrm{d} #1}
 \newcommand{\dx}[1]{\operatorname{d}\!#1}
+\newcommand{\ddx}[1]{\frac{\mathrm d}{\mathrm{d} #1}}
+\newcommand{\DDx}[1]{\frac{\partial}{\partial #1}}
+
 
 \renewcommand{\hat}{\widehat}
 \renewcommand{\tilde}{\widetilde}

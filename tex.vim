@@ -8,7 +8,7 @@ nnoremap ,rr :!pdflatex -interaction nonstopmode %<CR><CR>:!pdflatex -interactio
 nnoremap ,lv :!a=%; open ${a\%tex}pdf<CR><CR>
 
 
-" Aufzaehlungen 
+" Aufzaehlungen
 inoremap enum<Tab> \begin{enumerate}<CR>\item <CR><Up><Up><Esc>^<Down><Down>i\end{enumerate}<Up>
 inoremap enumi<Tab> \begin{enumerate}[(i)]<CR>\item <CR><Up><Up><Esc>^<Down><Down>i\end{enumerate}<Up>
 inoremap enuma<Tab> \begin{enumerate}[(a)]<CR>\item <CR><Up><Up><Esc>^<Down><Down>i\end{enumerate}<Up>
@@ -107,7 +107,7 @@ inoremap cnv<Tab> \longrightarrow<Space>
 inoremap glei<Tab> \overset{}{=}<Esc>F{hi
 
 inoremap ub<Tab> \underbrace{
-inoremap os<Tab> \overset{
+inoremap os<Tab> \overset
 inoremap us<Tab> \underset{
 
 inoremap fa<Tab> \,\forall \,
@@ -131,6 +131,8 @@ inoremap N<Tab> \mathbb N
 inoremap Z<Tab> \mathbb Z
 inoremap Q<Tab> \mathbb Q
 inoremap C<Tab> \mathbb C
+inoremap 1<Tab> \mathbbm 1_
+inoremap O<Tab> \Omega
 
 " griechische Buchstaben
 inoremap p<Tab> \varphi<Space>
@@ -150,6 +152,8 @@ inoremap <<Tab> \left<
 inoremap ><Tab> \right>
 inoremap [<Tab> \left[
 inoremap ]<Tab> \right]
+inoremap [[ \llbracket 
+inoremap ]] \rrbracket 
 inoremap {<Tab> \left\{
 inoremap }<Tab> \right\}
 inoremap <Bar><Tab> \middle<Bar>
@@ -168,9 +172,13 @@ inoremap Ue<Tab> "U
 inoremap ss<Tab> "s
 
 " Abkürzungen
-inoremap zB z.\,B. 
-inoremap zb z.\,B. 
-inoremap dh<Tab> d.\,h.
+inoremap zb<Tab> z.\,B.\ 
+inoremap zB z.\,B.\ 
+inoremap z.b. z.\,B.\ 
+inoremap z.B. z.\,B.\ 
+inoremap d.h. d.\,h.\ 
+inoremap d.<Space>h. d.\,h.\ 
+inoremap dh<Tab> d.\,h. 
 inoremap obda o.\,B.\,d.\,A.\, 
 inoremap Obda O.\,B.\,d.\,A.\, 
 inoremap OBdA O.\,B.\,d.\,A.\, 
