@@ -4,7 +4,7 @@ set colorcolumn=120
 
 nnoremap ,ll :!pdflatex -interaction nonstopmode %<CR>
 nnoremap ,lr :!a=%; bibtex ${a\%.tex}<CR><CR>
-nnoremap ,rr :!pdflatex -interaction nonstopmode %<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>:!a=%; bibtex ${a\%.tex}<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>
+nnoremap ,rr :!pdflatex -interaction nonstopmode %<CR><CR>:!a=%; bibtex ${a\%.tex}<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>
 nnoremap ,lv :!a=%; open ${a\%tex}pdf<CR><CR>
 
 
@@ -67,6 +67,8 @@ inoremap on<Tab> \operatorname{
 inoremap \on<Tab> \operatorname{
 inoremap fpar<Tab> \frac{\partial }{\partial }<Esc>F{hi
 inoremap \fpar<Tab> \frac{\partial }{\partial }<Esc>F{hi
+inoremap dd<Tab> \frac{\dx{}}{\dx{}}<Esc>F{a
+inoremap \dd<Tab> \frac{\dx{}}{\dx{}}<Esc>F{a
 inoremap par<Tab> \partial<Space>
 inoremap \par<Tab> \partial<Space>
 inoremap inf<Tab> \infty<Space>
@@ -119,7 +121,6 @@ inoremap != \neq
 inoremap .<Tab> \cdot
 
 " besondere Mengensymbole
-inoremap dd<Tab> \cdot,\cdot 
 inoremap R<Tab> \mathbb R
 inoremap E<Tab> \mathbb E
 inoremap P<Tab> \mathbb P
@@ -154,6 +155,8 @@ inoremap [<Tab> \left[
 inoremap ]<Tab> \right]
 inoremap [[ \llbracket 
 inoremap ]] \rrbracket 
+inoremap ((<Tab> \llparen 
+inoremap ))<Tab> \rrparen 
 inoremap {<Tab> \left\{
 inoremap }<Tab> \right\}
 inoremap <Bar><Tab> \middle<Bar>

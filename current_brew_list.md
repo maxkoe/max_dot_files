@@ -1,4 +1,4 @@
-current list of brew-installed packages (as of **19/08/2016**)
+current list of brew-installed packages (as of **20/09/2016**)
 
 -arpack
 -atk
@@ -75,12 +75,14 @@ current list of brew-installed packages (as of **19/08/2016**)
 -popt
 -pstoedit
 -pyqt
+-pyqt5
 -python
 -python3
 -qhull
 -qrupdate
 -qscintilla2
 -qt
+-qt5
 -readline
 -reattach-to-user-namespace
 -sip
@@ -90,6 +92,7 @@ current list of brew-installed packages (as of **19/08/2016**)
 -tbb
 -texinfo
 -tmux
+-unrar
 -veclibfort
 -webp
 -x264
