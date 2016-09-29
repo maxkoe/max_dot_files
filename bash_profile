@@ -28,7 +28,7 @@ export LANG=en_US.UTF-8
 alias uploadScripts="scp ~/tubcloud/Uni/ss15/Wahrscheinlichkeit/WTIII.pdf maxkoenig@sshgate.tu-berlin.de:~/public_html/files/scripts/ss15/; scp ~/tubcloud/Uni/ss15/Differentialgleichungen/DiffIIA.pdf maxkoenig@sshgate.tu-berlin.de:~/public_html/files/scripts/ss15/; scp ~/tubcloud/Uni/ss15/FunctionalAnalysis/FAIII.pdf maxkoenig@sshgate.tu-berlin.de:~/public_html/files/scripts/ss15/"
 alias sshlogin="ssh maxkoenig@master.ml.tu-berlin.de"
 alias testAway="python -m unittest discover"
-
+alias swkey="~/.my_scripts/switch_keyboards.sh"
 alias vimIPprep="stty stop undef # to unmap ctrl-s"
 
 alias ipython="ipython3"
