@@ -7,6 +7,9 @@ nnoremap ,lr :!a=%; bibtex ${a\%.tex}<CR><CR>
 nnoremap ,rr :!pdflatex -interaction nonstopmode %<CR><CR>:!a=%; bibtex ${a\%.tex}<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>
 nnoremap ,lv :!a=%; open ${a\%tex}pdf<CR><CR>
 
+nnoremap ,rl :!pdflatex -interaction nonstopmode ~/ma/Geschriebene_Texte/MA_Full<CR>
+nnoremap ,rv :!open ~/ma/Geschriebene_Texte/MA_Full.pdf<CR><CR>
+
 
 " Aufzaehlungen
 inoremap enum<Tab> \begin{enumerate}<CR>\item <CR><Up><Up><Esc>^<Down><Down>i\end{enumerate}<Up>

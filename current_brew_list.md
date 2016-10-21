@@ -1,4 +1,4 @@
-current list of brew-installed packages (as of **20/09/2016**)
+current list of brew-installed packages (as of **21/10/2016**)
 
 -arpack
 -atk
@@ -69,6 +69,7 @@ current list of brew-installed packages (as of **20/09/2016**)
 -pango
 -pangomm
 -pcre
+-phantomjs
 -pixman
 -pkg-config
 -plotutils
@@ -85,6 +86,7 @@ current list of brew-installed packages (as of **20/09/2016**)
 -qt5
 -readline
 -reattach-to-user-namespace
+-shared-mime-info
 -sip
 -sqlite
 -suite-sparse
@@ -93,6 +95,7 @@ current list of brew-installed packages (as of **20/09/2016**)
 -texinfo
 -tmux
 -unrar
+-utf8proc
 -veclibfort
 -webp
 -x264
