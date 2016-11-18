@@ -1,4 +1,4 @@
-current list of brew-installed packages (as of **21/10/2016**)
+current list of brew-installed packages (as of **18/11/2016**)
 
 -arpack
 -atk
@@ -102,3 +102,4 @@ current list of brew-installed packages (as of **21/10/2016**)
 -xvid
 -xz
 -zeromq
+-zsh

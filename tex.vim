@@ -2,10 +2,14 @@ set nocindent
 set timeoutlen=2000
 set colorcolumn=120
 
+set spell spelllang=de
+syntax spell toplevel
+
 nnoremap ,ll :!pdflatex -interaction nonstopmode %<CR>
-nnoremap ,lr :!a=%; bibtex ${a\%.tex}<CR><CR>
-nnoremap ,rr :!pdflatex -interaction nonstopmode %<CR><CR>:!a=%; bibtex ${a\%.tex}<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>
+nnoremap ,lr :!a=%; biber ${a\%.tex}<CR><CR>
+nnoremap ,rr :!pdflatex -interaction nonstopmode %<CR><CR>:!a=%; biber ${a\%.tex}<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>
 nnoremap ,lv :!a=%; open ${a\%tex}pdf<CR><CR>
+nnoremap ,// :!./render_excerpt.sh %<CR><CR>
 
 nnoremap ,rl :!pdflatex -interaction nonstopmode ~/ma/Geschriebene_Texte/MA_Full<CR>
 nnoremap ,rv :!open ~/ma/Geschriebene_Texte/MA_Full.pdf<CR><CR>

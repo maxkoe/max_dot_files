@@ -50,6 +50,8 @@ set hlsearch                      " highlight matches
 set ignorecase                    " ignore case
 set smartcase                     " unless the search term contains upper case
 
+let g:tex_flavor='latex'          " be sure to load empty tex-files as proper latex
+
 " set showcmd                       " show last (normal mode) command
 " set ruler                         " show current cursor position in numbers
 set number                        " enable line numbers
