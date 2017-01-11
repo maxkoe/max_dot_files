@@ -2,11 +2,11 @@
 
 
 
-mv ~/.karabiner.d/configuration/karabiner.json ~/.karabiner.d/configuration/MEDIUM
-mv ~/.karabiner.d/configuration/ALT_KARABINER.json ~/.karabiner.d/configuration/karabiner.json
-mv ~/.karabiner.d/configuration/MEDIUM ~/.karabiner.d/configuration/ALT_KARABINER.json
+mv ~/.config/karabiner/karabiner.json ~/.config/karabiner/MEDIUM
+mv ~/.config/karabiner/ALT_KARABINER.json ~/.config/karabiner/karabiner.json
+mv ~/.config/karabiner/MEDIUM ~/.config/karabiner/ALT_KARABINER.json
 
-less ~/.karabiner.d/configuration/karabiner.json | grep comment
+less ~/.config/karabiner/karabiner.json | grep comment
 
 open -a Karabiner-Elements
 open -a iterm

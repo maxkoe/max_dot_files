@@ -7,12 +7,13 @@ syntax spell toplevel
 
 nnoremap ,ll :!pdflatex -interaction nonstopmode %<CR>
 nnoremap ,lr :!a=%; biber ${a\%.tex}<CR><CR>
-nnoremap ,rr :!pdflatex -interaction nonstopmode %<CR><CR>:!a=%; biber ${a\%.tex}<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>
+" nnoremap ,rr :!pdflatex -interaction nonstopmode %<CR><CR>:!a=%; biber ${a\%.tex}<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>
 nnoremap ,lv :!a=%; open ${a\%tex}pdf<CR><CR>
 nnoremap ,// :!./render_excerpt.sh %<CR><CR>
 
-nnoremap ,rl :!pdflatex -interaction nonstopmode ~/ma/Geschriebene_Texte/MA_Full<CR>
-nnoremap ,rv :!open ~/ma/Geschriebene_Texte/MA_Full.pdf<CR><CR>
+nnoremap ,rl :!pdflatex -interaction nonstopmode ~/ma/Geschriebene_Texte/FinalView_MA<CR>
+nnoremap ,rr :!pdflatex -interaction nonstopmode ~/ma/Geschriebene_Texte/FinalView_MA<CR>
+nnoremap ,rv :!open ~/ma/Geschriebene_Texte/FinalView_MA.pdf<CR><CR>
 
 
 " Aufzaehlungen
@@ -85,6 +86,7 @@ inoremap olco<Tab> \overline{\operatorname{co}}
 
 " Fertige Konstrukte
 vnoremap ,u di\underbrace{<Esc>pa}_{}<Esc>ha
+vnoremap ,o di\overline{<Esc>pa}<Esc>ha
 inoremap _<Tab> _{}<Left>
 inoremap ^<Tab> ^{-1}
 inoremap ^12<Tab> ^\frac{1}{2}
