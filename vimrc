@@ -27,8 +27,6 @@ filetype plugin indent on    " required
 "enable mouse scrolling
 set mouse=a
 
-nnoremap \\ /\A\(insb\\|d\.\\,h\\|o\.\\,B\\|z\.\\,B\\|bzw\\|etc\\|Ch\\|Sec\\|Chap\\|Kap\\|Kor\\|Thm\\|Lem\\|Def\)\.<CR>
-
 
 syntax enable
 set background=light

@@ -6,15 +6,8 @@ set spell spelllang=de
 syntax spell toplevel
 
 nnoremap ,ll :!pdflatex -interaction nonstopmode %<CR>
-nnoremap ,lr :!a=%; biber ${a\%.tex}<CR><CR>
 " nnoremap ,rr :!pdflatex -interaction nonstopmode %<CR><CR>:!a=%; biber ${a\%.tex}<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>:!pdflatex -interaction nonstopmode %<CR><CR>
 nnoremap ,lv :!a=%; open ${a\%tex}pdf<CR><CR>
-nnoremap ,// :!./render_excerpt.sh %<CR><CR>
-
-nnoremap ,rl :!pdflatex -interaction nonstopmode ~/ma/Geschriebene_Texte/FinalView_MA<CR>
-nnoremap ,rr :!pdflatex -interaction nonstopmode ~/ma/Geschriebene_Texte/FinalView_MA<CR>
-nnoremap ,rv :!open ~/ma/Geschriebene_Texte/FinalView_MA.pdf<CR><CR>
-
 
 " Aufzaehlungen
 inoremap enum<Tab> \begin{enumerate}<CR>\item <CR><Up><Up><Esc>^<Down><Down>i\end{enumerate}<Up>
@@ -133,6 +126,7 @@ inoremap .<Tab> \cdot
 inoremap R<Tab> \mathbb R
 inoremap E<Tab> \mathbb E
 inoremap P<Tab> \mathbb P
+inoremap F<Tab> \mathbb F
 inoremap tP<Tab> \tilde{\mathbb P}
 inoremap t<Space>P<Tab> \tilde{\mathbb P}
 inoremap K<Tab> \mathbb K

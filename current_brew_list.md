@@ -1,4 +1,4 @@
-current list of brew-installed packages (as of **18/11/2016**)
+current list of brew-installed packages (as of **08/03/2017**)
 
 -arpack
 -atk
@@ -84,6 +84,7 @@ current list of brew-installed packages (as of **18/11/2016**)
 -qscintilla2
 -qt
 -qt5
+-qt@5.7
 -readline
 -reattach-to-user-namespace
 -shared-mime-info
