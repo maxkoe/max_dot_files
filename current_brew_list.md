@@ -1,4 +1,4 @@
-current list of brew-installed packages (as of **08/03/2017**)
+current list of brew-installed packages (as of **11/04/2017**)
 
 -arpack
 -atk
